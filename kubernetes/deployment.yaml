@@ -23,6 +23,8 @@ spec:
           envFrom:
             - secretRef:
                 name: weather-dashboard-secret
+            - configMapRef:
+                name: weather-dashboard-config
           resources:
             requests:
               cpu: "100m"
